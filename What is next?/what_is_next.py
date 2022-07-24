@@ -234,9 +234,7 @@ for i in range(len(list_type)):
     # print(list_type[i])
     avarage_l.append(avarage(list_type[i]))
     exist_l.append(existance_per(list_type[i])) 
-    # plt.scatter(range(0,20), list_type[i])
-    # plt.plot(range(0,20), list_type[i],label=names[i])
-# print(avarage_l)
+
 
 
 z=zip(exist_l,names)
@@ -267,61 +265,5 @@ ax.legend()
 
 
 plt.show()
-
-
-
-
-
-
-
-# xs = df['x'][:].values
-# ys = df['y'][:].values
-# # Plot y vs. x
-# plt.scatter(xs, ys)
-# # Set the labels for x and y axes:
-# plt.xlabel('x')
-# plt.ylabel('y')
-# # Set the title of the figure
-# plt.title("y vs x")
-# Text(0.5, 1.0, 'y vs x')
-
-# # Create a 2x2 grid of plots
-# fig, axes = plt.subplots(5,2)
-# # Plot (1,1)
-# axes[0,0].plot(x, x)
-# axes[0,0].set_title("$y=x$")
-# # Plot (1,2)
-# axes[0,1].plot(x, x**2)
-# axes[0,1].set_title("$y=x^2$")
-# # Plot (2,1)
-# axes[1,0].plot(x, x**3)
-# axes[1,0].set_title("$y=x^3$")
-# # Plot (2,2)
-# axes[1,1].plot(x, x**4)
-# axes[1,1].set_title("$y=x^4$")
-# # Adjust vertical space between rows
-# plt.subplots_adjust(hspace=1)
-
-
-# # Uniformly sample 50 x values between -2 and 2:
-# x = np.linspace(0, 6, 50)
-# # Plot y = x
-# plt.plot(x, x, label='$y=x$')
-# # Plot y = x^2
-# plt.plot(x, x**2, label='$y=x^2$')
-# # Plot y = x^3
-# plt.plot(x, x**3, label='$y=x^3$')
-# # Set the labels for x and y axes:
-# plt.xlabel('x')
-# plt.ylabel('y')
-# # Set the title of the figure
-# plt.title("Our First Plot -- Pyplot Style")
-# # Create a legend
-# plt.legend()
-
-
-
-
-
 
 
