@@ -24,6 +24,7 @@ But there are vehiclers and pedesterians, pets are entering and leaving from the
 
 
 ->Objects block view time to time
+
 ->I focused the types of the things(car,pedesterian etc.) passing through or entering the roads. (Just moving ones)
 
 15 sec intervals
@@ -32,12 +33,15 @@ But there are vehiclers and pedesterians, pets are entering and leaving from the
 Counting the things in that 20 frames, and analyzing.
 
 ![img2](https://user-images.githubusercontent.com/103535917/180664104-002aa429-e774-46b6-b3cc-9b47020d5259.png)
+
 (Not very meaningful)
 
 ![img4](https://user-images.githubusercontent.com/103535917/180664117-f3d922d0-f12c-43a1-85d2-144ad4cdbaf9.png)
 
+Because pedestrians walk slowly, we count them several times. I thought this situation is misleading while predicting the next frame.
 
 
+![Figure 2022-04-05 170541](https://user-images.githubusercontent.com/103535917/180664250-e37007b2-4997-46cf-9a58-85bde68c9c7d.png)
 
 
 
