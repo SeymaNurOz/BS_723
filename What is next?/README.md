@@ -36,9 +36,11 @@ Counting the things in that 20 frames, and analyzing.
 
 (Not very meaningful)
 
+
 ![img4](https://user-images.githubusercontent.com/103535917/180664117-f3d922d0-f12c-43a1-85d2-144ad4cdbaf9.png)
 
 Because pedestrians walk slowly, we count them several times. I thought this situation is misleading while predicting the next frame.
+
 
 
 ![Figure 2022-04-05 170541](https://user-images.githubusercontent.com/103535917/180664250-e37007b2-4997-46cf-9a58-85bde68c9c7d.png)
@@ -65,4 +67,4 @@ Because pedestrians walk slowly, we count them several times. I thought this sit
 
 %85.0 of the frames includes grey_car.
 
-Prediction about the next "frame": It will include at least a grey car.
+**Prediction about the next "frame": It will include at least a grey car.**
