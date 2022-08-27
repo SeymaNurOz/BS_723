@@ -1,8 +1,11 @@
 BS723 - Introduction to Machine Learning in Architecture: Challenges
 
 *Challanges definitions
+
 *Visuals and results of the code *REGRESSION
+
 *Visuals and results of the code *KNN
+
 
 Challenge #1:
 
@@ -69,3 +72,8 @@ REGRESSION
 
 KNN
 ![cubedataset_knn](https://user-images.githubusercontent.com/103535917/187028542-2da11516-f710-4c69-8e67-f1bd9f8acfce.jpg)
+
+*While using KNN algorithms, the algorithm based on the length of edges of the cubes has given better results than the diagonal and volume.
+
+
+**Regression algorithm gives better results in that challenge.
