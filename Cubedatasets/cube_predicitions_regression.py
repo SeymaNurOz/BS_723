@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 """
 Created on Thu May  5 22:53:35 2022
 
@@ -447,32 +446,4 @@ print(list(zip(r,g,b)))
 # print("Correctness")
 # for x in list(zip(r_c,g_c,b_c)):
 #     print(x)
-
-
-
-
-# """MULTIPLE REGRESSION"""
-
-array = np.array(all_data)
-x = array[:,0:3]
-y = array[:,3:4]
-#r value
-X_train, X_validation, Y_train, Y_validation = train_test_split(x, y, test_size=0.12, random_state=7)
-from sklearn.linear_model import LinearRegression
-regressor = LinearRegression()
-regressor.fit(X_train, Y_train)
-
-# Predicting the Test set results
-Y_pred = regressor.predict(X_validation)
-
-from sklearn.metrics import r2_score
-score=r2_score(Y_validation,Y_pred)
-
-Y_validation_list = Y_validation.tolist()
-Y_pred_list = Y_pred.tolist()
-print(list(zip(Y_validation_list,Y_pred_list)))
-print(score)
-
-
-
 
