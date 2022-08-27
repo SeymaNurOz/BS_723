@@ -1,5 +1,8 @@
 BS723 - Introduction to Machine Learning in Architecture: Challenges
 
+*Challanges definitions
+*Visuals and results of the code *REGRESSION
+*Visuals and results of the code *KNN
 
 Challenge #1:
 
@@ -43,6 +46,7 @@ the color is 100, your prediction should in between 80-120).
 
 
 Challenge #3:
+
 Problem Definition:
 Given a set of prisms with different dimensions and with different colors in
 the third dataset, train a model that can construct a prism when given a new
@@ -59,3 +63,9 @@ Expected Outcome:
 Using at most 9 randomly selected prisms from the test set, predict the color
 values of prisms with at most %10 error margin (if you survived the second
 challenge, you should know what an error margin means).
+
+REGRESSION
+![cubedataset_regression](https://user-images.githubusercontent.com/103535917/187028382-68f1663f-d9f6-4d20-a757-bd62fc563966.jpg)
+
+KNN
+![cubedataset_knn](https://user-images.githubusercontent.com/103535917/187028542-2da11516-f710-4c69-8e67-f1bd9f8acfce.jpg)
