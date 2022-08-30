@@ -22,7 +22,7 @@ As the last step of data preprocessing, files are split to train (70%), validati
 
 The expectation from the model is to determine the difficulty level of origami images if it is an origami.
 
- 
+
 **●	Clear definition of the model**
 
 The model has Convolutional Neural Network(CNN) architecture, which is implemented with TensorFlow, Keras, open-source libraries for machine learning models / neural network implementations (Keras could run on CPU and GPU)
@@ -86,7 +86,6 @@ Consequently, 64 could be optimum number for batch size, and the number of the e
 
 
 ![image](https://user-images.githubusercontent.com/103535917/187435143-0077c84c-188a-497d-941b-39aafc2f8123.png)
-
 The second group of graphs was created to understand which color mode could give more accurate results with 64 batch size and 100 x 100 px image size.
 The graphs show that color mode changes don't create a significant difference.
 
@@ -117,35 +116,22 @@ Evaluates the performance of the model after training.
 **●	Clear definition of scores & results**
 **●	Assessment of the graphics and scores**
 
-
 *Phase 1/Origami & No-origami*
-![image](https://user-images.githubusercontent.com/103535917/187435372-cae6b779-9ede-410e-abbd-9360d51fde01.png)
-![image](https://user-images.githubusercontent.com/103535917/187435405-21e38589-5e2e-44d2-8683-75098d5518b2.png)
 
+![image](https://user-images.githubusercontent.com/103535917/187435372-cae6b779-9ede-410e-abbd-9360d51fde01.png) ![image](https://user-images.githubusercontent.com/103535917/187435405-21e38589-5e2e-44d2-8683-75098d5518b2.png)
 
-Accuracy(Train):	0.94
-Accuracy(Validation):	0.87
-Accuracy(Test):	0.578125
-Precision:	0.586299
-Recall:	0.578125
-F1 Score:	0.580962
+![image](https://user-images.githubusercontent.com/103535917/187436339-a467b5c7-938c-4636-b8a0-32016e7eca45.png)
+
 
 The line graphs show that accuracy reaches almost 1.0 in the training dataset and approximately about 0.85 in the validation dataset. However, in the test dataset, it remains under 0.6. 
 And as seen from the confusions matrix, the probability of predicting no-origami images is higher.
 
 
 *Phase2/Difficulty level*
-![image](https://user-images.githubusercontent.com/103535917/187435481-53f0f31c-5050-44fa-86df-a6eb3f9f7198.png)
-![image](https://user-images.githubusercontent.com/103535917/187435497-2a344091-2676-48e6-b22e-c91ca50e9fe3.png)
+
+![image](https://user-images.githubusercontent.com/103535917/187435481-53f0f31c-5050-44fa-86df-a6eb3f9f7198.png)![image](https://user-images.githubusercontent.com/103535917/187435497-2a344091-2676-48e6-b22e-c91ca50e9fe3.png)
 
 ![image](https://user-images.githubusercontent.com/103535917/187435710-128fb345-7c8c-4303-9c4d-e4ca05ca6f3b.png)
-
-Accuracy(Train):	0.88
-Accuracy(Validation):	0.59
-Accuracy(Test):	0.468750
-Precision:	0.502574
-Recall:	0.46875
-F1 Score:	0.480260
 
 The second phase has a smaller dataset and a more complicated task (distinguishing the difficulty levels. Consequently, it cannot reach the accuracy level of phase1 despite the higher number of epochs. 
 On the other hand, there is no useful standard for determining the difficulty levels. And the assigned levels by the users are inconsistent. In the dataset, they were classified according to appearances. (how much they look intricate) But still, it is not an objective parameter.
